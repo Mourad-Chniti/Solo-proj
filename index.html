@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./imgs/logo.png">
+    <script src="./jquery.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+  <img id="img" src="./imgs/logo.png" >
+    <div class="sgine">
+        
+    <div class="sign" id="login">
+    <div id="grid">
+        <div id="sign">
+        <h1 id="signIn">Welcom To Our Site </h1>
+<label>Adress Email</label><br>
+        <input placeholder="Your Email" id="ema"><br>
+        <label>Your Password</label><br>
+        <input type="password"  placeholder="Your Password" id="pass"><br>
+        <div id="check">
+        <input type="checkbox" onclick="seePass()">
+        <p>See Password</p> <br>
+    </div>
+</div>
+<div id="signup" >
+<label>Your Name</label><br>
+<input placeholder="Your Name" id="name"><br>
+<label>Your Lastname</label><br>
+<input placeholder="Your Lastname" id="lastname"><br>
+<label>Adress Email</label><br>
+<input placeholder="Your Email" id="ema" ><br>
+<label>Your Age</label><br>
+<input placeholder="Your Age" id="age" ><br>
+<label>Your Password</label><br>
+<input type="password"  placeholder="Your Password" id="pass"><br>
+<label>Confirme Your Password</label><br>
+<input type="password"  placeholder="Your Password" id="confirme"><br> <br>
+
+</div>
+</div>
+    <div >
+    <div id="bob">
+    <button onclick="storage() , checkInput()"id="btn1">Login In </button>
+    <button onclick="hide()" id="btn">Creat An Account</button>
+    <button id="btn2">Next</button>
+    </div>
+</div> 
+    </div>
+    <div id="homepage">
+        <nav>
+            <div class="menu-icon">
+               <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo"><a href="#"><img src="./imgs/logo.png" ></a>
+               
+            </div>
+            <div class="nav-items">
+               <li><a href="#" id="home">HOME</a></li>
+               <li><a href="#" id="ACTION">ACTION</a></li>
+               <li><a href="#" id="LOVE">LOVE</a></li>
+               <li><a href="#" id="ANIME">ANIME</a></li>
+               <li><a href="#" id="ABOUT">ABOUT</a></li>
+            </div>
+         </nav>
+     
+<div id="hom">
+   <div class="movie-list-container"> <br> 
+      <br> 
+      <br> 
+      <h1 class="movie-list-title">All The Collection</h1>
+      <!-- <div id="Action"> -->
+      <div class="movie-list-wrapper">
+          <div class="movie-list">
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/-sky-high.jpg" alt="">
+                  <span class="movie-list-item-title">Sky High</span>
+                  <p class="movie-list-item-desc">A commentary on Spanish society disguised as a thriller about the misadventures of a gang of young criminals after the real estate crash.</p>
+                  <button class="movie-list-item-button" >Watch</button>
+                  
+              </div>
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/venom.jpg" alt="">
+                  <span class="movie-list-item-title">Venom </span>
+                  <p class="movie-list-item-desc">When Eddie Brock gains the powers of a symbiote, he will have to free his alter ego "Venom" to save his life.</p>
+                  <button class="movie-list-item-button" id="venom">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/Free-guy-movie.jpg" alt="">
+                  <span class="movie-list-item-title">Free Guy</span>
+                  <p class="movie-list-item-desc">Bank clerk finds out he's actually one of the characters in a violent video game.</p>
+                  <button class="movie-list-item-button" id="free">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/mortal combat.jpg" alt="">
+                  <span class="movie-list-item-title">Mortal Kombat</span>
+                  <p class="movie-list-item-desc">Unknown plot. Feature film inspired by the successful video game.</p>
+                  <button class="movie-list-item-button" id="mortal">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/redemption.jpg" alt="">
+                  <span class="movie-list-item-title">Redemption Day</span>
+                  <p class="movie-list-item-desc">When the love of his life is kidnapped and held hostage by terrorists, war hero Brad Paxton races against the clock to save her in a daring and deadly operation that pits him against the darkest forces.</p>
+                  <button class="movie-list-item-button" id="day">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/sweet girl.jpg" alt="">
+                  <span class="movie-list-item-title">Sweet Girl</span>
+                  <p class="movie-list-item-desc">A devastated husband promises to bring justice to those responsible for his wife's death while protecting the only family he has left: his daughter.</p>
+                  <button class="movie-list-item-button" id="girl">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="./imgs/the suicide squad.jpg" alt="">
+                  <span class="movie-list-item-title">Suicide Squad 2</span>
+                  <p class="movie-list-item-desc">Villains Harley Quinn, Bloodsport, Peacemaker, and a handsome collection of prison crooks in Belle Reve join the super-secret and super-shady Task Force X, on the distant and enemy-crammed island of Corto Maltese.</p>
+                  <button class="movie-list-item-button" id="squad">Watch</button>
+              </div>
+              <div class="movie-list-item">
+               <img class="movie-list-item-img" src="./imgs/tomorrow war.jpg" alt="">
+               <span class="movie-list-item-title">Tomorrow War</span>
+               <p class="movie-list-item-desc">A father is called to fight in a future war where the fate of humanity depends on his ability to face the past.</p>
+               <button class="movie-list-item-button" id="war">Watch</button>
+            </div>
+           </div>
+          </div>
+        <!-- </div> -->
+      </div>
+      <!-- <div id="sec2"> -->
+      <div class="movie-list-container"> <br> 
+         <br> 
+         <br> 
+         <div class="movie-list-wrapper">
+             <div class="movie-list">
+      <div class="movie-list-item">
+         <img class="movie-list-item-img" src="./imgs/warth of man.jpg" alt="">
+         <span class="movie-list-item-title">Warth Of Man </span>
+         <p class="movie-list-item-desc">The plot follows H, a mysterious character who works at a cash truck company tasked with moving hundreds of millions of dollars every week to Los Angeles.</p>
+         <button class="movie-list-item-button" id="warth">Watch</button>
+     </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="./imgs/red.jpg" alt="">
+         <span class="movie-list-item-title">SAS.Red.Notice</span>
+         <p class="movie-list-item-desc">A small army of criminals led by Grace Lewis hijacks a channel train.</p>
+         <button class="movie-list-item-button" id="sas">Watch</button>
+     </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="./imgs/split.jpg" alt="">
+         <span class="movie-list-item-title">Splite</span>
+         <p class="movie-list-item-desc">A man who has manifested 23 different personalities kidnaps three teenage girls. They must try to escape before the appearance of his dreadful 24th personality.</p>
+         <button class="movie-list-item-button" id="split">Watch</button>
+     </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="./imgs/attack.jpg" alt="">
+         <span class="movie-list-item-title">Attack On Titan</span>
+         <p class="movie-list-item-desc">In a world where giant humanoid Titans prey on humans, Eren joins the scouting legion to get revenge on the monsters who killed everyone in his town.</p>
+         <button class="movie-list-item-button" id="attack">Watch</button>
+     </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="./imgs/demon.jpg" alt="">
+         <span class="movie-list-item-title">Demon Slayer: Le train de l'infini</span>
+         <p class="movie-list-item-desc">Tanjiro Kamado boards the Infinity Train for a new mission with Inosuke Hashibira, a boy raised by wild boars, and Zenitsu Agatsuma, a boy who reveals his true power when he sleeps.</p>
+         <button class="movie-list-item-button" id="demon">Watch</button>
+     </div>
+     <div class="movie-list-item">
+         <img class="movie-list-item-img" src="./imgs/hello.jpg" alt="">
+         <span class="movie-list-item-title">Hello World</span>
+         <p class="movie-list-item-desc">A man travels in time from the year 2027 to relive his school years and to correct a bad decision.</p>
+         <button class="movie-list-item-button" id="hello">Watch</button>
+     </div>
+     <div class="movie-list-item">
+      <img class="movie-list-item-img" src="./imgs/boss.jpg" alt="">
+      <span class="movie-list-item-title">The Boss Baby: Family Business</span>
+      <p class="movie-list-item-desc">The Templeton brothers are now adults and have lost sight of each other. But, a new Boss Baby with a radical approach is about to bring them closer together again, while also inspiring a new family story.</p>
+      <button class="movie-list-item-button" id="boss">Watch</button>
+   </div>
+   <div class="movie-list-item">
+    <img class="movie-list-item-img" src="./imgs/small.jpg" alt="">
+    <span class="movie-list-item-title">Small Town Saturday Night</span>
+    <p class="movie-list-item-desc">One day in the life of a small US town. Donnie, newly released from jail; Tommy the local cop separated from his wife; Rhett, preparing to leave to try his luck in Nashville. The story weaves these characters' stories.</p>
+    <button class="movie-list-item-button" id="small">Watch</button>
+    </div>
+  </div>
+<!-- </div> -->
+</div>
+<!-- <div id="sec3"> -->
+<div class="movie-list-container"> <br> 
+   <br> 
+   <br> 
+   <div class="movie-list-wrapper">
+       <div class="movie-list">
+<div class="movie-list-item">
+   <img class="movie-list-item-img" src="./imgs/fault.jpg" alt="">
+   <span class="movie-list-item-title">The Fault In Our Stars</span>
+   <p class="movie-list-item-desc">Two adolescent cancer patients embark on a life-discovery journey to visit a lonely author in Amsterdam.</p>
+   <button class="movie-list-item-button" id="fault">Watch</button>
+</div>
+<div class="movie-list-item">
+   <img class="movie-list-item-img" src="./imgs/hes.jpg" alt="">
+   <span class="movie-list-item-title">He's All That</span>
+   <p class="movie-list-item-desc">A teenage girl sets out to give a nebbish classmate the ultimate high school makeover. An updated remake of the 1999 film, 'She's All That'.</p>
+   <button class="movie-list-item-button" id="hes">Watch</button>
+</div>
+<div class="movie-list-item">
+   <img class="movie-list-item-img" src="./imgs/into.jpg" alt="">
+   <span class="movie-list-item-title">Into the Beat</span>
+   <p class="movie-list-item-desc">A teenage ballerina discovers hip-hop by chance and is forced to make an impossible choice: should she follow in her parents' footsteps or follow her new passion?</p>
+   <button class="movie-list-item-button" id="into">Watch</button>
+</div>
+<div class="movie-list-item">
+   <img class="movie-list-item-img" src="./imgs/three.jpg" alt="">
+   <span class="movie-list-item-title">Tres metros sobre el cielo</span>
+   <p class="movie-list-item-desc">A woman from high society and a reckless man fall in love despite their different social classes.</p>
+   <button class="movie-list-item-button" id="three">Watch</button>
+</div> 
+<div class="movie-list-item">
+   <img class="movie-list-item-img" src="./imgs/want you.jpg" alt="">
+   <span class="movie-list-item-title">I Want You</span>
+   <p class="movie-list-item-desc">The sequel of Three Meters Above The Sky, starts with the return of H to his hometown where reconnecting with the past means struggle and also a new love.</p>
+   <button class="movie-list-item-button" id="want">Watch</button>
+</div>
+<div class="movie-list-item">
+   <img class="movie-list-item-img" src="./imgs/words.jpg" alt="">
+   <span class="movie-list-item-title">The Words</span>
+   <p class="movie-list-item-desc">While at the height of his fame, a writer discovers the price to pay for stealing another's work.</p>
+   <button class="movie-list-item-button" id="words">Watch</button>
+</div>
+<div class="movie-list-item">
+<img class="movie-list-item-img" src="./imgs/people.jpg" alt="">
+<span class="movie-list-item-title">People Like Us</span>
+<p class="movie-list-item-desc">While settling his recently deceased father's estate, a salesman discovers he has a sister whom he never knew about, leading both siblings to re-examine their perceptions about family and life choices.</p>
+<button class="movie-list-item-button" id="People">Watch</button>
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="./imgs/five.jpg" alt="">
+    <span class="movie-list-item-title">Five Feet Apart</span>
+    <p class="movie-list-item-desc">A pair of teenagers with cystic fibrosis meet in a hospital and fall in love, though their disease means they must avoid close physical contact.</p>
+    <button class="movie-list-item-button" id="five">Watch</button>
+ </div>
+
+</div>
+</div>
+</div>
+<!-- </div> -->
+
+
+
+
+
+    <div class="sky">
+<iframe    width="425" height="344" src="./films/action/[EgyBest].Sky.High.2020.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+    </div>
+    <div class="venom">
+      <iframe   width="425" height="344" src="./films/action/[EgyBest].Venom.2018.BluRay.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+          </div>
+          <div class="free">
+            <iframe   width="425" height="344" src="./films/action/[EgyBest].Free.Guy.2021.BluRay.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                </div>
+                <div class="mortal">
+                  <iframe   width="425" height="344" src="./films/action/[EgyBest].Mortal.Kombat.2021.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                      </div>
+                      <div class="day">
+                        <iframe   width="425" height="344" src="./films/action/[EgyBest].Redemption.Day.2021.BluRay.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                            </div>
+                            <div class="girl">
+                              <iframe   width="425" height="344" src="./films/action/[EgyBest].Sweet.Girl.2021.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                  </div>
+                                  <div class="squad">
+                                    <iframe   width="425" height="344" src="./films/action/[EgyBest].The.Suicide.Squad.2021.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                        </div>
+                                        <div class="war">
+                                          <iframe   width="425" height="344" src="./films/action/[EgyBest].The.Tomorrow.War.2021.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                              </div>
+                                              <div class="warth">
+                                                <iframe   width="425" height="344" src="./films/action/[EgyBest].Wrath.Of.Man.2021.BluRay.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                                    </div>
+                                                    <div class="sas">
+                                                      <iframe   width="425" height="344" src="./films/action/[EgyBest].SAS.Red.Notice.2021.WEB-DL.720p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                              </div>
+                                                          <div class="split">
+                                                            <iframe   width="425" height="344" src="./films/action/[EgyBest].Split.2017.BluRay.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                                            <div class="attack">
+                                                               <iframe   width="425" height="344" src="./films/action/[EgyBest].Attack.On.Titan.Part.1.2015.BluRay.720p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                                               <div class="demon">
+                                                                  <iframe   width="425" height="344" src="./films/anime/[EgyBest].Demon.Slayer.The.Movie.Mugen.Train.2020.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                                                  <div class="hello">
+                                                                     <iframe   width="425" height="344" src="./films/anime/Hello World الفيلم.mp4" frameborder="0" allowfullscreen></iframe> 
+                                                                     <div class="boss">
+                                                                        <iframe   width="425" height="344" src="./films/anime/[EgyBest].The.Boss.Baby.Family.Business.2021.WEB-DL.480p.x264.mp4" frameborder="0" allowfullscreen></iframe> 
+                                                                            </div>
+                                                                         </div>
+                                                                      </div> 
+                                                                   </div>
+                                                                </div>
+    
+    <script src="./main.js"></script>
+   
+</body>
+</html>
+
